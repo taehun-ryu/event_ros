@@ -1,0 +1,18 @@
+[submodule "libcaer_driver"]
+	path = libcaer_driver
+	url = https://github.com/ros-event-camera/libcaer_driver.git
+[submodule "event_camera_msgs"]
+	path = event_camera_msgs
+	url = https://github.com/ros-event-camera/event_camera_msgs.git
+[submodule "event_camera_codecs"]
+	path = event_camera_codecs
+	url = https://github.com/ros-event-camera/event_camera_codecs.git
+[submodule "event_camera_renderer"]
+	path = event_camera_renderer
+	url = https://github.com/ros-event-camera/event_camera_renderer.git
+[submodule "event_camera_tools"]
+	path = event_camera_tools
+	url = https://github.com/ros-event-camera/event_camera_tools.git
+[submodule "event_camera_legacy_tools"]
+	path = event_camera_legacy_tools
+	url = https://github.com/ros-event-camera/event_camera_legacy_tools.git

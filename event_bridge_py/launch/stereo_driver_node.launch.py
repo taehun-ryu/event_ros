@@ -29,16 +29,16 @@ def launch_setup(context, *args, **kwargs):
         executable='driver_node',
         output='screen',
         # prefix=["xterm -e gdb -ex run --args"],
-        name='event_cam1',
+        name='davis_634',
         parameters=[
             {
                 'device_type': LaunchConfig('device_type'),
                 'device_id': 1,
-                'master': True,
+                'master': False,
                 'serial': '00000634',
                 'statistics_print_interval': 2.0,
                 'camerainfo_url': '',
-                'frame_id': 'event_cam1',
+                'frame_id': 'davis_634',
                 'event_message_time_threshold': 1.0e-3,
                 'dvs_enabled': True,
                 # safe to enable imu
@@ -59,23 +59,23 @@ def launch_setup(context, *args, **kwargs):
                 # "OFFBn_fine": 0,  # for DAVIS
             },
         ],
-        remappings=[('~/reset_timestamps', LaunchConfig('reset_topic'))],
+        remappings=[('~/reset_timestamps', 'davis_636/reset_timestamps')],
     )
     cam2_node = Node(
         package='libcaer_driver',
         executable='driver_node',
         output='screen',
         # prefix=["xterm -e gdb -ex run --args"],
-        name='event_cam2',
+        name='davis_636',
         parameters=[
             {
                 'device_type': LaunchConfig('device_type'),
                 'device_id': 2,
-                'master': False,
+                'master': True,
                 'serial': '00000636',
                 'statistics_print_interval': 2.0,
                 'camerainfo_url': '',
-                'frame_id': 'event_cam2',
+                'frame_id': 'davis_636',
                 'event_message_time_threshold': 1.0e-3,
                 'dvs_enabled': True,
                 # safe to enable imu

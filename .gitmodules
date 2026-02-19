@@ -16,3 +16,9 @@
 [submodule "event_camera_legacy_tools"]
 	path = event_camera_legacy_tools
 	url = https://github.com/ros-event-camera/event_camera_legacy_tools.git
+[submodule "dvs_msgs"]
+	path = dvs_msgs
+	url = https://github.com/ros-event-camera/dvs_msgs.git
+[submodule "prophesee_event_msgs"]
+	path = prophesee_event_msgs
+	url = https://github.com/ros-event-camera/prophesee_event_msgs.git

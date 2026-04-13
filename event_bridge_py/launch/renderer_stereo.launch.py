@@ -28,7 +28,7 @@ def launch_setup(context, *args, **kwargs):
         package='event_camera_renderer',
         executable='renderer_node',
         output='screen',
-        namespace='event_cam1',
+        namespace='davis_634',
         # prefix=['xterm -e gdb -ex run --args'],
         name='renderer',
         parameters=[
@@ -44,7 +44,7 @@ def launch_setup(context, *args, **kwargs):
         package='event_camera_renderer',
         executable='renderer_node',
         output='screen',
-        namespace='event_cam2',
+        namespace='davis_636',
         # prefix=['xterm -e gdb -ex run --args'],
         name='renderer',
         parameters=[
